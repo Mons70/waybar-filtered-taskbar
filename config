@@ -1,0 +1,13 @@
+[
+{
+  "layer": "top",
+  "position": "top",
+  "output": "eDP-1",
+  "include": "~/.config/waybar/defconf",
+  "modules-center": ["custom/taskbar-eDP-1"],
+  "custom/taskbar-eDP-1": {
+    "exec": "~/.config/waybar/scripts/taskbar.py eDP-1",
+    "return-type": "json"
+  }
+}
+]
