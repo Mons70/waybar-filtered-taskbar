@@ -29,12 +29,13 @@ chmod +x ~/.config/waybar/scripts/taskbar.sh
 ```
 You probably need to edit the first line in taskbar.py to point to your own python environment with i3ipc-python installed.
 
-### Update .bashrc/.zshrc
-you need to include this in your .bashrc/.zshrc for the module to configure itself properly
+### Update Sway config
+you need to include this in your sway config BEFORE calling waybar for the module to configure itself properly
 ```
-exec_always{
+wxec_always {
   ~/.config/waybar/scripts/taskbar.sh
 }
+```
 
 
 Then you should be ready to go!!
